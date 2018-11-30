@@ -4,7 +4,7 @@ pipeline {
   }
   environment {
     ORG = 'capt2101akash'
-    APP_NAME = 'golang-http'
+    APP_NAME = 'nginx-ingress'
     CHARTMUSEUM_CREDS = credentials('jenkins-x-chartmuseum')
   }
   stages {
@@ -62,7 +62,7 @@ pipeline {
       }
       steps {
         container('go') {
-          dir('/home/jenkins/go/src/github.com/capt2101akash/golang-http/charts/golang-http') {
+          dir('/home/jenkins/go/src/github.com/capt2101akash/golang-http/charts/nginx-ingress') {
             sh "jx step changelog --version v\$(cat ../../VERSION)"
 
             // release the helm chart

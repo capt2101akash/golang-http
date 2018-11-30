@@ -24,8 +24,8 @@ profiles:
   deploy:
     helm:
       releases:
-      - name: golang-http
-        chartPath: charts/golang-http
+      - name: nginx-ingress
+        chartPath: charts/nginx-ingress
         setValueTemplates:
           image.repository: "{{.DOCKER_REGISTRY}}/capt2101akash/golang-http"
           image.tag: "{{.DIGEST_HEX}}"
