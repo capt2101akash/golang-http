@@ -10,4 +10,4 @@ dependencies:
   version: 2.3.56
 - alias: preview
   name: golang-http
-  repository: file://../golang-http
+  repository: file://../nginx-ingress
