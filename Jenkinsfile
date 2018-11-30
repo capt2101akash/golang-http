@@ -4,7 +4,7 @@ pipeline {
   }
   environment {
     ORG = 'capt2101akash'
-    APP_NAME = 'golang-http'
+    APP_NAME = 'nginx-ingress'
     CHARTMUSEUM_CREDS = credentials('jenkins-x-chartmuseum')
   }
   stages {
